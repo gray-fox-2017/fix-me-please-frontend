@@ -19,10 +19,12 @@
 <script>
 export default {
   props: ['id'],
-  firebase: {
-    cat: {
-      asObject: true,
-      source: this.$db.ref('cats').child(this.id)
+  firebase () {
+    return {
+      cat: {
+        asObject: true,
+        source: this.$db.ref('cats').child(this.id)
+      }
     }
   }
 }
