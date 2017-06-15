@@ -1,6 +1,6 @@
 <template lang="html">
     <h1>Home</h1>
-    <md-card v-for="cat in latestCat" :key="cat['.key']">
+    <md-card v-for="cat in latestCat" :key="cats['.key']">
       <md-card-media>
         <img :src="cat.url" :alt="cat.comment">
       </md-card-media>
