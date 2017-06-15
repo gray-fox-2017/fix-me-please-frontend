@@ -15,6 +15,7 @@ const config = {
 }
 const firebaseApp = firebase.initializeApp(config)
 
+// Vue.config.productionTip = false
 Vue.prototype.$http = axios
 Vue.prototype.$db = firebaseApp.database()
 Vue.use(VueFire)
