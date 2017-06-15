@@ -1,4 +1,6 @@
 <template lang="html">
+<div>
+  <div id="home">
     <h1>Home</h1>
     <md-card v-for="cat in latestCat" :key="cat['.key']">
       <md-card-media>
@@ -15,17 +17,19 @@
         </router-link>
       </md-card-actions>
     </md-card>
+  </div>
+</div>
 </template>
 
 <script>
 export default {
-  firebase() {
+  firebase () {
     return {
-      cats: this.$db.ref('cats'),
+      cats: this.$db.ref('cats')
     }
   },
   computed: {
-    latestCats: this.cats.reverse(),
+    latestCats: this.cats.reverse()
   }
 }
 </script>
