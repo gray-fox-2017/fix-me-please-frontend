@@ -11,7 +11,7 @@ import firebase from 'firebase'
 
 const config = {
   databaseURL: 'https://progressive-tamvan.firebaseio.com',
-  projectId: 'progressive-tamvan',
+  projectId: 'progressive-tamvan'
 }
 const firebaseApp = firebase.initializeApp(config)
 
